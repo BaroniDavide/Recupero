@@ -47,6 +47,7 @@ const database = {
       let sql = `
          INSERT INTO booking(nomeTodoType, date, hour, name)
          VALUES ('${book.nomeTodoType}', '${book.date}', '${book.hour}', '${book.name}')
+         DATETIME NOT NULL
            `;
       return executeQuery(sql)
     },
